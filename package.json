@@ -1,0 +1,35 @@
+{
+  "name": "deep-utils",
+  "version": "0.1.0",
+  "description": "",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build:esm": "esbuild src/index.ts --bundle --outfile=dist/index.esm.js --format=esm",
+    "build:cjs": "esbuild src/index.ts --bundle --outfile=dist/index.js --format=cjs",
+    "build:dts": "tsc",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rizzzse/deep-utils.git"
+  },
+  "keywords": [],
+  "author": "rizzzse <rizzzse@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rizzzse/deep-utils/issues"
+  },
+  "homepage": "https://github.com/rizzzse/deep-utils#readme",
+  "devDependencies": {
+    "@types/jest": "^27.4.0",
+    "esbuild": "^0.14.11",
+    "esbuild-jest": "^0.5.0",
+    "jest": "^27.4.7",
+    "typescript": "^4.5.4"
+  }
+}
